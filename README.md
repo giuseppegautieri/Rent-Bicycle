@@ -6,16 +6,16 @@ Il progetto è stato realizzato come elaborato per l'esame di **Programmazione 3
 
 ---
 
-## 🚀 Funzionalità Principali
+## Funzionalità Principali
 
 Il sistema prevede due tipologie di utenti con permessi e interfacce dedicate:
 
-### 👤 Area Cliente (GUICliente)
+### Area Cliente (GUICliente)
 * **Registrazione & Login**: Creazione di un account cliente con salvataggio sicuro della password tramite hash.
 * **Noleggio Biciclette (Affitti)**: Possibilità di noleggiare una bicicletta specificando il parcheggio di partenza (città origine), il parcheggio di arrivo (città destinazione) e i chilometri previsti del tragitto.
 * **Fatturazione e Pagamenti**: Calcolo automatico del costo del noleggio basato sulla tariffa della categoria di bicicletta e la distanza in km. Supporto a diversi metodi di pagamento (es. carta).
 
-### ⚙️ Area Amministratore (GUIAdmin)
+### Area Amministratore (GUIAdmin)
 * **Registrazione & Login**: Accesso riservato agli amministratori del servizio.
 * **Gestione Flotta**: Aggiunta di nuove biciclette nel sistema specificando la categoria e la tariffa oraria/chilometrica.
 * **Gestione Equipaggiamento**: Possibilità di aggiungere equipaggiamenti specifici a modelli esistenti (es. seggiolino, navigatore).
@@ -25,32 +25,32 @@ Il sistema prevede due tipologie di utenti con permessi e interfacce dedicate:
 
 ---
 
-## 📂 Struttura del Progetto
+## Struttura del Progetto
 
 Il codice sorgente è strutturato secondo il pattern MVC all'interno della cartella `ProgettoGautieriGiuseppe/src`:
 
-* 📂 **`model`**: Contiene le classi di dominio dell'applicazione.
+*  **`model`**: Contiene le classi di dominio dell'applicazione.
   * `model.Bike`: Gestione dell'entità bicicletta (`Bike`, `AbstractBike`).
   * `model.Parcheggio`: Rappresenta i punti di stallo/parcheggio nelle città.
   * `model.User`: Gestione dei profili utente (`Cliente`, `Admin`, `AbstractUtente`).
-* 📂 **`controller`**: Gestisce la logica di business e l'interazione con il database.
+*  **`controller`**: Gestisce la logica di business e l'interazione con il database.
   * `Database.java`: Gestore principale delle connessioni, query SQL e persistenza.
   * `Affitto.java`: Logica legata ai noleggi.
   * `Pagamento.java`: Logica associata ai pagamenti e alla fatturazione.
-* 📂 **`view`**: Interfaccia grafica (GUI) realizzata in Swing.
+*  **`view`**: Interfaccia grafica (GUI) realizzata in Swing.
   * `Root.java`: Finestra iniziale di login e accesso alla registrazione.
   * `GUICliente.java` / `RegisterCliente.java`: Dashboard e modulo di registrazione del cliente.
   * `GUIAdmin.java` / `GUIRegAdmin.java`: Dashboard e modulo di registrazione dell'amministratore.
-* 📂 **`commons`**: Classi di utilità generale.
+*  **`commons`**: Classi di utilità generale.
   * `DBConstants.java`: Query SQL di inizializzazione e costanti del database.
   * `PasswordUtils.java`: Algoritmo di hashing sicuro delle password.
-* 📂 **`exceptions`**: Gestione robusta delle eccezioni personalizzate (es. `UtenteNotFoundException`, `BikeNotFoundException`, `AffittoDuplicatoException`).
-* 📂 **`test`**: Contiene scenari di test per la verifica delle funzionalità.
+*  **`exceptions`**: Gestione robusta delle eccezioni personalizzate (es. `UtenteNotFoundException`, `BikeNotFoundException`, `AffittoDuplicatoException`).
+*  **`test`**: Contiene scenari di test per la verifica delle funzionalità.
   * `Scenario.java`: Script di test per verificare la connessione ed eseguire inserimenti/ricerche di prova sul database.
 
 ---
 
-## 🛠️ Requisiti di Sistema
+##  Requisiti di Sistema
 
 * **Java JDK**: Versione 8 o superiore.
 * **Database**: MySQL Server (consigliato v8.0 o successive).
@@ -58,7 +58,7 @@ Il codice sorgente è strutturato secondo il pattern MVC all'interno della carte
 
 ---
 
-## ⚙️ Configurazione del Database
+##  Configurazione del Database
 
 L'applicazione è progettata per configurarsi in modo semi-automatico.
 
@@ -84,7 +84,7 @@ Il database è composto dalle seguenti tabelle relazionali:
 
 ---
 
-## 🚀 Come Eseguire l'Applicazione
+##  Come Eseguire l'Applicazione
 
 ### Da IDE (Eclipse / IntelliJ IDEA)
 1. Importa la cartella `ProgettoGautieriGiuseppe` come progetto Java esistente nel tuo IDE.
