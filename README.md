@@ -27,7 +27,7 @@ Il sistema prevede due tipologie di utenti con permessi e interfacce dedicate:
 
 ## Struttura del Progetto
 
-Il codice sorgente è strutturato secondo il pattern MVC all'interno della cartella `ProgettoGautieriGiuseppe/src`:
+Il codice sorgente è strutturato secondo il pattern MVC all'interno della cartella `Rent-Bicycle/src`:
 
 *  **`model`**: Contiene le classi di dominio dell'applicazione.
   * `model.Bike`: Gestione dell'entità bicicletta (`Bike`, `AbstractBike`).
