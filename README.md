@@ -2,7 +2,7 @@
 
 **My Bikes** è un'applicazione desktop sviluppata in Java per la gestione di un servizio di bike sharing. Il sistema è basato sul pattern architetturale **MVC (Model-View-Controller)**, utilizza l'interfaccia grafica **Java Swing** per le dashboard di interazione, e si appoggia a un database **MySQL** per la persistenza dei dati con credenziali cifrate in modo sicuro.
 
-Il progetto è stato realizzato come elaborato per l'esame di **Programmazione 3** da **Giuseppe Gautieri**.
+Il progetto è stato realizzato come elaborato per l'esame di **Programmazione 3**.
 
 ---
 
