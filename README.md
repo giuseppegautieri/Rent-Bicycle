@@ -87,7 +87,7 @@ Il database è composto dalle seguenti tabelle relazionali:
 ##  Come Eseguire l'Applicazione
 
 ### Da IDE (Eclipse / IntelliJ IDEA)
-1. Importa la cartella `ProgettoGautieriGiuseppe` come progetto Java esistente nel tuo IDE.
+1. Importa la cartella `Rent-Bicycle` come progetto Java esistente nel tuo IDE.
 2. Assicurati che la libreria JDBC (`mysql-connector-j-*.jar`) all'interno della cartella `lib` sia correttamente aggiunta al **Build Path** del progetto.
 3. Esegui la classe **`view.Root.java`** come *Java Application*. Si aprirà la finestra di login dell'interfaccia grafica.
 
